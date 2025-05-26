@@ -65,7 +65,7 @@ Generazione della Frase Nonsense
 Dopo aver scelto il template, l'applicazione genera una frase nonsense combinando le parole estratte con il template selezionato.  
   	
    	Esempio:  
-  `	Generated Sentence: The quick fox jumps the lazy dog.`
+        Generated Sentence: The quick fox jumps the lazy dog.`
 
 
 Validazione della Tossicità
