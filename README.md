@@ -1,6 +1,6 @@
 # project-edids
 
-INTRODUZIONE: descrizione ad alto livello del progetto
+INTRODUZIONE: 
 
 Il NonSenseGenerator è un'applicazione che genera frasi senza senso partendo da un input dell'utente. 
 Combina parole estratte da una frase fornita dall'utente con template predefiniti o casuali per creare frasi creative e senza senso. 
@@ -96,43 +96,54 @@ La volta successiva il bucket sarà vuoto.
 
 
 ISTRUZIONI:
+
 Come preparare l'ambiente, compilare e avviare l’applicazione.
 
-Clonare il progetto con: git clone https://github.com/sara-githu/project-edids cd nonsensegenerator 
+Clonare il progetto con: 
+
+	git clone https://github.com/sara-githu/project-edids cd nonsensegenerator 
 
 Configurare Google Cloud:
 Accedere alla console di Google Cloud.
 Creare un Service Account con il ruolo di Cloud Natural Language API User.
 Scaricare il file .json di credenziali. 
 Importare la variabile d’ambiente. 
-Per Windows : set GOOGLE_APPLICATION_CREDENTIALS=C:\path\to\file.json
+	
+ 	Per Windows : set GOOGLE_APPLICATION_CREDENTIALS=C:\path\to\file.json
 
-Per Linux/macOS: export GOOGLE_APPLICATION_CREDENTIALS=/home/user/path/to/file.json
+	Per Linux/macOS: export GOOGLE_APPLICATION_CREDENTIALS=/home/user/path/to/file.json
 
 Per chi vuole poter modificare il progetto:
 Prerequisito avere Maven
 
 Compilare il progetto: 
 Aprire il terminale nella cartella principale del progetto (dove si trova pom.xml) e digitare: 
-mvn clean install
+
+	mvn clean install
 
 Eseguire il progetto : 
 Aprire il terminale nella cartella principale del progetto (dove si trova pom.xml) e digitare: 
-mvn exec:java
+
+	mvn exec:java
 
 
 Eseguire i test
 Aprire il terminale nella cartella principale del progetto (dove si trova pom.xml) e digitare: 
-mvn test
+
+	mvn test
 
 Per generare il report HTML dei test: 
-mvn surefire-report:report
+
+	mvn surefire-report:report
 
 
 Per utenti finali: 
+
 3. Apri il progetto con un IDE 
  
-4. esegui: java -jar Main.jar. 
+4. esegui:
+
+	java -jar Main.jar. 
 
 
 
@@ -202,8 +213,10 @@ INDICAZIONI DI API ESTERNE:
 
 Google Cloud Natural Language API
 Il progetto utilizza la Google Cloud Natural Language API tramite il client ufficiale Java (google-cloud-language). Questa API consente di effettuare analisi semantiche sui testi, come l’analisi sintattica, il riconoscimento delle entità e la validazione della tossicità della frase generata. È indispensabile per le funzionalità di elaborazione del linguaggio naturale presenti nel software. L’accesso al servizio richiede la configurazione di un account Google Cloud e la definizione della variabile d’ambiente GOOGLE_APPLICATION_CREDENTIALS.
+
 JUnit 5
 JUnit 5 è il framework utilizzato per la scrittura e l’esecuzione dei test unitari. Permette di automatizzare la verifica del corretto funzionamento del codice attraverso annotazioni e asserzioni, migliorando la qualità e l’affidabilità del software.
+
 Maven Surefire Plugin
 Il Maven Surefire Plugin viene impiegato per eseguire i test durante la fase di build e per la generazione di report sui risultati dei test. Questo plugin facilita l’integrazione dei test nel processo di sviluppo automatizzato tramite Maven.
 
