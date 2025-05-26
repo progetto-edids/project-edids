@@ -10,12 +10,13 @@ Utilizzo:
 
 
 Inserimento della Frase
+
 All'avvio, ti verrà chiesto di inserire una frase.  
+
+La frase deve contenere almeno un sostantivo (noun) e un verbo (verb), altrimenti verrà richiesto di reinserirla.
 
 	Esempio: 
 	Write a sentence: “The quick brown fox jumps over the lazy dog”
-
-La frase deve contenere almeno un sostantivo (noun) e un verbo (verb), altrimenti verrà richiesto di reinserirla.
 
 
 Analisi della Frase
