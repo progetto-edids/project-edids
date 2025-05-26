@@ -17,6 +17,7 @@ All'avvio, ti verrà chiesto di inserire una frase.
 La frase deve contenere almeno un sostantivo (noun) e un verbo (verb), altrimenti verrà richiesto di reinserirla.
 
 Analisi della Frase
+
 L'applicazione estrae sostantivi, verbi e aggettivi dalla frase inserita e li mostra nella console.  
 	
  	Esempio: 
@@ -27,6 +28,7 @@ L'applicazione estrae sostantivi, verbi e aggettivi dalla frase inserita e li mo
 	Adjectives: [quick, brown, lazy]
   
 Albero sintattico
+
 Dopo che l’utente ha inserito la frase gli verrà chiesto se vuole visualizzarne l’albero sintattico
 
 	Esempio: 
@@ -36,6 +38,7 @@ Dopo che l’utente ha inserito la frase gli verrà chiesto se vuole visualizzar
 	{sentence=The quick brown fox jumps over the lazy dog, tokens=[{word=The, tag=DET, dependency=DET}, {word=quick, tag=ADJ, dependency=AMOD}, {word=brown, tag=ADJ, dependency=AMOD}, {word=fox, tag=NOUN, dependency=NSUBJ}, {word=jumps, tag=VERB, dependency=ROOT}, {word=over, tag=ADP, dependency=PREP}, {word=the, tag=DET, dependency=DET}, {word=lazy, tag=ADJ, dependency=AMOD}, {word=dog, tag=NOUN, dependency=POBJ}]}
 
 Scelta del Template
+
 L'applicazione mostra una lista di template disponibili. Se il template ha ad esempio più aggettivi di quelli presenti nella frase di input ne verranno aggiunti da un dizionario. Puoi scegliere tra:
 Template predefiniti: Selezionabili tramite numero.  
 
@@ -49,12 +52,14 @@ Template predefiniti: Selezionabili tramite numero.
 	Oppure puoi scegliere di generare un template casuale
 
 Generazione della Frase Nonsense
+
 Dopo aver scelto il template, l'applicazione genera una frase nonsense combinando le parole estratte con il template selezionato.  
   	
    	Esempio:  
   `	Generated Sentence: The quick fox jumps the lazy dog.`
 
 Validazione della Tossicità
+
 La frase generata viene analizzata per valutarne la tossicità. Se il punteggio di tossicità è elevato, verrà visualizzato un avviso.  
  	
   	Esempio: 
@@ -62,12 +67,14 @@ La frase generata viene analizzata per valutarne la tossicità. Se il punteggio 
   	This sentence appears to be safe.
 
 Inserimento della frase nel Bucket
+
 Dopo che la frase è stata generata verrà chiesto all’utente se desidera salvarla all’interno di un bucket. 
 
 	Esempio:
 	Do you want to add the sentence to the bucket ?Yes
 
 Visualizzazione del bucket
+
 Verrà chiesto all’utente se desidera visualizzare il buket con le frasi salvate fino a quel momento.
 
 	Esempio:
@@ -75,6 +82,7 @@ Verrà chiesto all’utente se desidera visualizzare il buket con le frasi salva
 	- The quick fox jumps the lazy dog
 
 Salvare il bucket 
+
 Dopo aver deciso se visualizzare il bucket l’utente può decidere di svuotare il bucket.
 
 	Esempio:
