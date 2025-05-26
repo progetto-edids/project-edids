@@ -8,6 +8,7 @@ L'applicazione include anche funzionalità per analizzare la sintassi, validare 
 
 Utilizzo:
 
+
 Inserimento della Frase
 All'avvio, ti verrà chiesto di inserire una frase.  
 
@@ -15,6 +16,7 @@ All'avvio, ti verrà chiesto di inserire una frase.
 	Write a sentence: “The quick brown fox jumps over the lazy dog”
 
 La frase deve contenere almeno un sostantivo (noun) e un verbo (verb), altrimenti verrà richiesto di reinserirla.
+
 
 Analisi della Frase
 
@@ -26,6 +28,7 @@ L'applicazione estrae sostantivi, verbi e aggettivi dalla frase inserita e li mo
 	Nouns: [fox, dog]
 	Verbs: [jumps]
 	Adjectives: [quick, brown, lazy]
+
   
 Albero sintattico
 
@@ -37,9 +40,13 @@ Dopo che l’utente ha inserito la frase gli verrà chiesto se vuole visualizzar
 	
 	{sentence=The quick brown fox jumps over the lazy dog, tokens=[{word=The, tag=DET, dependency=DET}, {word=quick, tag=ADJ, dependency=AMOD}, {word=brown, tag=ADJ, dependency=AMOD}, {word=fox, tag=NOUN, dependency=NSUBJ}, {word=jumps, tag=VERB, dependency=ROOT}, {word=over, tag=ADP, dependency=PREP}, {word=the, tag=DET, dependency=DET}, {word=lazy, tag=ADJ, dependency=AMOD}, {word=dog, tag=NOUN, dependency=POBJ}]}
 
+
 Scelta del Template
 
-L'applicazione mostra una lista di template disponibili. Se il template ha ad esempio più aggettivi di quelli presenti nella frase di input ne verranno aggiunti da un dizionario. Puoi scegliere tra:
+L'applicazione mostra una lista di template disponibili. Se il template ha ad esempio più aggettivi di quelli presenti nella frase di input ne verranno aggiunti da un dizionario. 
+
+Puoi scegliere tra:
+
 Template predefiniti: Selezionabili tramite numero.  
 
   	Esempio: 
@@ -49,7 +56,8 @@ Template predefiniti: Selezionabili tramite numero.
  
   	Choose a template by number: 1
 
-	Oppure puoi scegliere di generare un template casuale
+Oppure puoi scegliere di generare un template casuale
+
 
 Generazione della Frase Nonsense
 
@@ -57,6 +65,7 @@ Dopo aver scelto il template, l'applicazione genera una frase nonsense combinand
   	
    	Esempio:  
   `	Generated Sentence: The quick fox jumps the lazy dog.`
+
 
 Validazione della Tossicità
 
@@ -73,6 +82,7 @@ Dopo che la frase è stata generata verrà chiesto all’utente se desidera salv
 	Esempio:
 	Do you want to add the sentence to the bucket ?Yes
 
+
 Visualizzazione del bucket
 
 Verrà chiesto all’utente se desidera visualizzare il buket con le frasi salvate fino a quel momento.
@@ -80,6 +90,7 @@ Verrà chiesto all’utente se desidera visualizzare il buket con le frasi salva
 	Esempio:
 	Bucket:
 	- The quick fox jumps the lazy dog
+
 
 Salvare il bucket 
 
@@ -91,11 +102,13 @@ Dopo aver deciso se visualizzare il bucket l’utente può decidere di svuotare 
 Il bucket delle frasi nonsense generate fino a quel momento verranno salvate in un file txt che si troverà nella cartella del progetto.
 
 
-Svuotare il buckey
+Svuotare il bucket
+
 Dopo aver deciso se salvare il bucket l'utente può decidere di svuotarlo
 
 	Esempio:
 	Do you want to clear the bucket? Yes
+
 
 La volta successiva il bucket sarà vuoto.
 
@@ -122,6 +135,7 @@ Importare la variabile d’ambiente.
 	Per Linux/macOS: export GOOGLE_APPLICATION_CREDENTIALS=/home/user/path/to/file.json
 
 Per chi vuole poter modificare il progetto:
+
 Prerequisito avere Maven
 
 Compilare il progetto: 
