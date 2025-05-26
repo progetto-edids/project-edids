@@ -10,19 +10,21 @@ Utilizzo:
 
 Inserimento della Frase
 All'avvio, ti verrà chiesto di inserire una frase.  
-Esempio: 
-Write a sentence: “The quick brown fox jumps over the lazy dog”
+
+	Esempio: 
+	Write a sentence: “The quick brown fox jumps over the lazy dog”
 
 La frase deve contenere almeno un sostantivo (noun) e un verbo (verb), altrimenti verrà richiesto di reinserirla.
 
 Analisi della Frase
 L'applicazione estrae sostantivi, verbi e aggettivi dalla frase inserita e li mostra nella console.  
-Esempio: 
+	
+ 	Esempio: 
   
-Extracted words:
-Nouns: [fox, dog]
-Verbs: [jumps]
-Adjectives: [quick, brown, lazy]
+	Extracted words:
+	Nouns: [fox, dog]
+	Verbs: [jumps]
+	Adjectives: [quick, brown, lazy]
   
 Albero sintattico
 Dopo che l’utente ha inserito la frase gli verrà chiesto se vuole visualizzarne l’albero sintattico
@@ -40,7 +42,7 @@ Template predefiniti: Selezionabili tramite numero.
   	Esempio: 
  	Available templates:
   	[1] The [adjective] [noun] [verb] the [adjective] [noun].
- [2] The [adjective] [noun] [verb] the [adjective] [noun] while the [noun] [verb] the [adjective] [noun].
+ 	[2] The [adjective] [noun] [verb] the [adjective] [noun] while the [noun] [verb] the [adjective] [noun].
  
   	Choose a template by number: 1
 
@@ -48,33 +50,35 @@ Template predefiniti: Selezionabili tramite numero.
 
 Generazione della Frase Nonsense
 Dopo aver scelto il template, l'applicazione genera una frase nonsense combinando le parole estratte con il template selezionato.  
-  	Esempio:  
+  	
+   	Esempio:  
   `	Generated Sentence: The quick fox jumps the lazy dog.`
 
 Validazione della Tossicità
 La frase generata viene analizzata per valutarne la tossicità. Se il punteggio di tossicità è elevato, verrà visualizzato un avviso.  
- 	Esempio: 
+ 	
+  	Esempio: 
   	Toxicity Score: 0.10
   	This sentence appears to be safe.
 
 Inserimento della frase nel Bucket
 Dopo che la frase è stata generata verrà chiesto all’utente se desidera salvarla all’interno di un bucket. 
 
-Esempio:
-Do you want to add the sentence to the bucket ?Yes
+	Esempio:
+	Do you want to add the sentence to the bucket ?Yes
 
 Visualizzazione del bucket
 Verrà chiesto all’utente se desidera visualizzare il buket con le frasi salvate fino a quel momento.
 
-Esempio:
-Bucket:
-- The quick fox jumps the lazy dog
+	Esempio:
+	Bucket:
+	- The quick fox jumps the lazy dog
 
 Salvare il bucket 
 Dopo aver deciso se visualizzare il bucket l’utente può decidere di svuotare il bucket.
 
-Esempio:
-Do you want to save the bucket ?Yes
+	Esempio:
+	Do you want to save the bucket ?Yes
 
 Il bucket delle frasi nonsense generate fino a quel momento verranno salvate in un file txt che si troverà nella cartella del progetto.
 
@@ -82,8 +86,8 @@ Il bucket delle frasi nonsense generate fino a quel momento verranno salvate in 
 Svuotare il buckey
 Dopo aver deciso se salvare il bucket l'utente può decidere di svuotarlo
 
-Esempio:
-Do you want to clear the bucket? Yes
+	Esempio:
+	Do you want to clear the bucket? Yes
 
 La volta successiva il bucket sarà vuoto.
 
