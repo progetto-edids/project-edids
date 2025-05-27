@@ -23,7 +23,7 @@ Il progetto è già configurato per usare questo path.
 
 3. Per chi vuole poter modificare il progetto:
 
-Prerequisito avere Maven
+Prerequisito avere Maven installato sul computer con le variabili d'ambiente corrette.
 
 Compilare il progetto: 
 Aprire il terminale nella cartella principale del progetto (dove si trova pom.xml) e digitare: 
