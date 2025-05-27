@@ -42,6 +42,9 @@ Dopo che l’utente ha inserito la frase gli verrà chiesto se vuole visualizzar
 	{sentence=The quick brown fox jumps over the lazy dog, tokens=[{word=The, tag=DET, dependency=DET}, {word=quick, tag=ADJ, dependency=AMOD}, {word=brown, tag=ADJ, dependency=AMOD}, {word=fox, tag=NOUN, dependency=NSUBJ}, {word=jumps, tag=VERB, dependency=ROOT}, {word=over, tag=ADP, dependency=PREP}, {word=the, tag=DET, dependency=DET}, {word=lazy, tag=ADJ, dependency=AMOD}, {word=dog, tag=NOUN, dependency=POBJ}]}
 
 
+
+
+
 Scelta del Template
 
 L'applicazione mostra una lista di template disponibili. Se il template ha ad esempio più aggettivi di quelli presenti nella frase di input ne verranno aggiunti da un dizionario. 
