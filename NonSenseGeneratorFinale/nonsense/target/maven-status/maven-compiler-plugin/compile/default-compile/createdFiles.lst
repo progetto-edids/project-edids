@@ -1,0 +1,8 @@
+com\nonsense\Main.class
+com\nonsense\TemplateManager\TemplateManager.class
+com\nonsense\Dictionary\Dictionary.class
+com\nonsense\UI\UI.class
+com\nonsense\ToxicityValidator\ToxicityValidator.class
+com\nonsense\Syntax\Syntax.class
+com\nonsense\BucketManager\BucketManager.class
+com\nonsense\NonSenseGenerator\NonSenseGenerator.class
