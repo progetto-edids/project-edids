@@ -7,9 +7,9 @@
 
    Funzionalità riutilizzate:
 
-      @Test – per definire metodi di test
+         @Test – per definire metodi di test
 
-      assertEquals, assertTrue, assertFalse – per verificare i risultati attesi
+         assertEquals, assertTrue, assertFalse – per verificare i risultati attesi
 
 
 2. Google Cloud Natural Language API (com.google.cloud.language)
@@ -19,13 +19,13 @@
 
    Funzionalità riutilizzate:
 
-      LanguageServiceClient – per accedere ai servizi linguistici di Google
+         LanguageServiceClient – per accedere ai servizi linguistici di Google
 
-      Document – per rappresentare il testo da analizzare
+         Document – per rappresentare il testo da analizzare
 
-      AnalyzeSyntaxResponse – per ottenere risultati dall’analisi
+         AnalyzeSyntaxResponse – per ottenere risultati dall’analisi
 
-      ModerateTestRequest – per ottenere il punteggio di tossicità della frase
+         ModerateTestRequest – per ottenere il punteggio di tossicità della frase
 
 
 3. Maven Surefire Plugin (maven-surefire-plugin)
