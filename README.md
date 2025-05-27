@@ -121,8 +121,8 @@ La volta successiva il bucket sarà vuoto.
 
 
 
-***ISTRUZIONI:*
-**
+***ISTRUZIONI:***
+
 Come preparare l'ambiente, compilare e avviare l’applicazione.
 
 1. Clonare il progetto con: 
