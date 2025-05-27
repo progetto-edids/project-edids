@@ -1,6 +1,6 @@
 # project-edids
 
-*INTRODUZIONE:*
+***INTRODUZIONE:***
 
 Il NonSenseGenerator è un'applicazione che genera frasi senza senso partendo da un input dell'utente. 
 Combina parole estratte da una frase fornita dall'utente con template predefiniti o casuali per creare frasi creative e senza senso. 
@@ -97,7 +97,7 @@ Verrà chiesto all’utente se desidera visualizzare il buket con le frasi salva
 	- The quick fox jumps the lazy dog
 
 
-9.Salvare il bucket 
+9. Salvare il bucket 
 
 Dopo aver deciso se visualizzare il bucket l’utente può decidere di svuotare il bucket.
 
@@ -121,8 +121,8 @@ La volta successiva il bucket sarà vuoto.
 
 
 
-*ISTRUZIONI:*
-
+***ISTRUZIONI:*
+**
 Come preparare l'ambiente, compilare e avviare l’applicazione.
 
 1. Clonare il progetto con: 
@@ -179,7 +179,7 @@ Per generare il report HTML dei test:
 
 
 
-*AMBIENTI DI ESECUZIONE:* 
+***AMBIENTI DI ESECUZIONE:***
 Per eseguire correttamente il progetto Nonsense Generator è necessario disporre di: 
 
 1. Java JDK 21. Ambiente di esecuzione e linguaggio di programmazione usato per la creazione del software.
@@ -201,7 +201,7 @@ Connessione a internet per l’utilizzo dell'API esterna
 
 
 
-*FUNZIONI UTILIZZATE DA LIBRERIE:*
+***FUNZIONI UTILIZZATE DA LIBRERIE:***
 1. JUnit 5.9.3 (org.junit.jupiter)
 Utilizzato per scrivere e lanciare test unitari
 
