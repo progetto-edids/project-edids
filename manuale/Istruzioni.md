@@ -48,10 +48,12 @@ Per generare il report HTML dei test:
 
 4. Per utenti finali: 
 
- Apri il progetto con un IDE 
- esegui:
+ Apri la cartella del progetto con un IDE 
 
-	java -jar Main.jar. 
+ Fare Run del Main.java che si trova nel seguente path 
+ 		
+   	C:src\main\java\com\nonsense\Main.java
+
 
 
 
