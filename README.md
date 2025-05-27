@@ -128,12 +128,12 @@ Clonare il progetto con:
 Configurare Google Cloud:
 Accedere alla console di Google Cloud.
 Creare un Service Account con il ruolo di Cloud Natural Language API User.
-Scaricare il file .json di credenziali. 
-Importare la variabile d’ambiente. 
-	
- 	Per Windows : set GOOGLE_APPLICATION_CREDENTIALS=C:\path\to\file.json
+Scaricare il file .json di credenziali.
+Inserirlo in 
 
-	Per Linux/macOS: export GOOGLE_APPLICATION_CREDENTIALS=/home/user/path/to/file.json
+	credentials/google-credentials.json 
+Che verrà ignorato da git.
+Il progetto è già configurato epr usare questo path.
 
 Per chi vuole poter modificare il progetto:
 
