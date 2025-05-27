@@ -1,8 +1,0 @@
-  cane
-  gatto
-  palla
-  verde
-  giallo
-  azzurro
-  correre
-  giocare
