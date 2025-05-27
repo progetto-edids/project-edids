@@ -1,15 +1,16 @@
 # project-edids
 
-INTRODUZIONE: 
+*INTRODUZIONE:*
 
 Il NonSenseGenerator è un'applicazione che genera frasi senza senso partendo da un input dell'utente. 
 Combina parole estratte da una frase fornita dall'utente con template predefiniti o casuali per creare frasi creative e senza senso. 
 L'applicazione include anche funzionalità per analizzare la sintassi, validare la tossicità delle frasi generate e salvarle in un "bucket" che è possibile salvare come file .txt.
 
+
 Utilizzo:
 
 
-Inserimento della Frase
+1. Inserimento della Frase
 
 All'avvio, ti verrà chiesto di inserire una frase.  
 
@@ -19,7 +20,7 @@ La frase deve contenere almeno un sostantivo (noun) e un verbo (verb), altriment
 	Write a sentence: “The quick brown fox jumps over the lazy dog”
 
 
-Analisi della Frase
+2. Analisi della Frase
 
 L'applicazione estrae sostantivi, verbi e aggettivi dalla frase inserita e li mostra nella console.  
 	
@@ -31,7 +32,7 @@ L'applicazione estrae sostantivi, verbi e aggettivi dalla frase inserita e li mo
 	Adjectives: [quick, brown, lazy]
 
   
-Albero sintattico
+3. Albero sintattico
 
 Dopo che l’utente ha inserito la frase gli verrà chiesto se vuole visualizzarne l’albero sintattico
 
@@ -45,7 +46,7 @@ Dopo che l’utente ha inserito la frase gli verrà chiesto se vuole visualizzar
 
 
 
-Scelta del Template
+4. Scelta del Template
 
 L'applicazione mostra una lista di template disponibili. Se il template ha ad esempio più aggettivi di quelli presenti nella frase di input ne verranno aggiunti da un dizionario. 
 
@@ -63,7 +64,7 @@ Template predefiniti: Selezionabili tramite numero.
 Oppure puoi scegliere di generare un template casuale
 
 
-Generazione della Frase Nonsense
+5. Generazione della Frase Nonsense
 
 Dopo aver scelto il template, l'applicazione genera una frase nonsense combinando le parole estratte con il template selezionato.  
   	
@@ -71,7 +72,7 @@ Dopo aver scelto il template, l'applicazione genera una frase nonsense combinand
         Generated Sentence: The quick fox jumps the lazy dog.`
 
 
-Validazione della Tossicità
+6. Validazione della Tossicità
 
 La frase generata viene analizzata per valutarne la tossicità. Se il punteggio di tossicità è elevato, verrà visualizzato un avviso.  
  	
@@ -79,7 +80,7 @@ La frase generata viene analizzata per valutarne la tossicità. Se il punteggio 
   	Toxicity Score: 0.10
   	This sentence appears to be safe.
 
-Inserimento della frase nel Bucket
+7. Inserimento della frase nel Bucket
 
 Dopo che la frase è stata generata verrà chiesto all’utente se desidera salvarla all’interno di un bucket. 
 
@@ -87,7 +88,7 @@ Dopo che la frase è stata generata verrà chiesto all’utente se desidera salv
 	Do you want to add the sentence to the bucket ?Yes
 
 
-Visualizzazione del bucket
+8. Visualizzazione del bucket
 
 Verrà chiesto all’utente se desidera visualizzare il buket con le frasi salvate fino a quel momento.
 
@@ -96,7 +97,7 @@ Verrà chiesto all’utente se desidera visualizzare il buket con le frasi salva
 	- The quick fox jumps the lazy dog
 
 
-Salvare il bucket 
+9.Salvare il bucket 
 
 Dopo aver deciso se visualizzare il bucket l’utente può decidere di svuotare il bucket.
 
@@ -106,7 +107,7 @@ Dopo aver deciso se visualizzare il bucket l’utente può decidere di svuotare 
 Il bucket delle frasi nonsense generate fino a quel momento verranno salvate in un file txt che si troverà nella cartella del progetto.
 
 
-Svuotare il bucket
+10. Svuotare il bucket
 
 Dopo aver deciso se salvare il bucket l'utente può decidere di svuotarlo
 
@@ -120,25 +121,30 @@ La volta successiva il bucket sarà vuoto.
 
 
 
-ISTRUZIONI:
+*ISTRUZIONI:*
 
 Come preparare l'ambiente, compilare e avviare l’applicazione.
 
-Clonare il progetto con: 
+1. Clonare il progetto con: 
 
-	git clone https://github.com/sara-githu/project-edids cd nonsensegenerator 
+		git clone https://github.com/sara-githu/project-edids cd nonsensegenerator 
 
-Configurare Google Cloud:
+2. Configurare Google Cloud:
 Accedere alla console di Google Cloud.
 Creare un Service Account con il ruolo di Cloud Natural Language API User.
 Scaricare il file .json di credenziali.
-Inserirlo in 
+Rinominarlo come 
 
-	credentials/google-credentials.json 
+		google-credentials.json 
+Copiarlo nella cartella credentials. 
+Il path finale dovrebbe essere
+
+	nonsense/credentials/google-credentials.json 
 Che verrà ignorato da git.
-Il progetto è già configurato epr usare questo path.
+Il progetto è già configurato per usare questo path.
 
-Per chi vuole poter modificare il progetto:
+
+3. Per chi vuole poter modificare il progetto:
 
 Prerequisito avere Maven
 
@@ -163,23 +169,22 @@ Per generare il report HTML dei test:
 	mvn surefire-report:report
 
 
-Per utenti finali: 
+4. Per utenti finali: 
 
-3. Apri il progetto con un IDE 
- 
-4. esegui:
+ Apri il progetto con un IDE 
+ esegui:
 
 	java -jar Main.jar. 
 
 
 
 
-AMBIENTI DI ESECUZIONE: 
+*AMBIENTI DI ESECUZIONE:* 
 Per eseguire correttamente il progetto Nonsense Generator è necessario disporre di: 
 
-Java JDK 21. Ambiente di esecuzione e linguaggio di programmazione usato per la creazione del software.
+1. Java JDK 21. Ambiente di esecuzione e linguaggio di programmazione usato per la creazione del software.
 
-JUnit 5.9.3. 
+2. JUnit 5.9.3. 
 E’ il framework utilizzato per l’implementazione dei test automatici del progetto, consentendo la verifica del corretto funzionamento dei metodi principali attraverso test unitari.
 Un framework è un insieme strutturato di:
 Librerie già pronte
@@ -187,7 +192,7 @@ Regole e convenzioni
 Annotazioni e metodi predefiniti che ti aiutano a scrivere codice in modo organizzato e coerente.
 
 
-Apache Maven come build tool. 
+3. Apache Maven come build tool. 
 Apache Maven è uno strumento che automatizza la compilazione, il testing, la gestione delle dipendenze e il packaging di progetti software, principalmente Java.
 
 Connessione a internet per l’utilizzo dell'API esterna
@@ -196,7 +201,7 @@ Connessione a internet per l’utilizzo dell'API esterna
 
 
 
-FUNZIONI UTILIZZATE DA LIBRERIE
+*FUNZIONI UTILIZZATE DA LIBRERIE:*
 1. JUnit 5.9.3 (org.junit.jupiter)
 Utilizzato per scrivere e lanciare test unitari
 
