@@ -10,6 +10,6 @@ public class Main {
         UI ui = new UI(new NonSenseGenerator());
         ui.start();
       
-        System.setProperty("GOOGLE_APPLICATION_CREDENTIALS", "C:/Users/franc/OneDrive/Desktop/project-edids.txt.json");
+        System.setProperty("GOOGLE_APPLICATION_CREDENTIALS", "C:\\nonsense\\credentials\\google-credentials.json");
     }
 }
