@@ -26,7 +26,6 @@ public class NonSenseGenerator {
     String result = template;
     
     //prende le liste aggiornate
-
     List<String> userNouns = syntaxAnalyzer.getNouns();
     List<String> userAdjectives = syntaxAnalyzer.getAdjectives();
     List<String> userVerbs = syntaxAnalyzer.getVerbs();
@@ -50,7 +49,6 @@ public class NonSenseGenerator {
     while (result.matches("(?i).*\\[adjective\\].*") && !userAdjectives.isEmpty()) {
         result = result.replaceFirst("(?i)\\[adjective\\]", getSafeWord(userAdjectives.remove(0)));
     }
-    
         return result;
     }
 
@@ -60,8 +58,6 @@ public class NonSenseGenerator {
             .results()
             .count();
     }
-
-   
 
     //vengono contanti gli spazi nel template e il syntax aggiorna le liste 
     public void setSelectedTemplate(String template, Syntax syntaxAnalyzer){
