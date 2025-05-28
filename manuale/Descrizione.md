@@ -101,7 +101,7 @@ Verrà chiesto all’utente se desidera visualizzare il buket con le frasi salva
 Dopo aver deciso se visualizzare il bucket l’utente può decidere di svuotare il bucket.
 
 	Esempio:
-	Do you want to save the bucket ?Yes
+	Do you want to save the bucket? Yes
 
 Il bucket delle frasi nonsense generate fino a quel momento verranno salvate in un file txt che si troverà nella cartella del progetto.
 
