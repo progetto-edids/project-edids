@@ -76,21 +76,21 @@ Definizione degli acceptance criteria:
    		e li aggiunge da un dizionario voglio poter vedere i termini che ha scelto nella frase finale. 
 
 
-9. Come utente, voglio poter selezionare un tempo verbale per la frase in modo da avere una frase con un tempo predefinito
+8. Come utente, voglio poter selezionare un tempo verbale per la frase in modo da avere una frase con un tempo predefinito
 
   		-Come utente che ha inserito una frase di input e scelto un template,
-    		voglio poter selezionare un tempo verbale 
+   		voglio poter selezionare un tempo verbale 
 	
   		-Come utente che ha inserito una frase di input e scelto un tempo verbale,
-    		voglio che il sistema modifichi i verbi della frase input e eventualmente quelli aggiuntivi con il tempo richiesto
+		voglio che il sistema modifichi i verbi della frase input e eventualmente quelli aggiuntivi con il tempo richiesto
 
   		-Come utente che ha selezionato un tempo verbale,
-    		 voglio che la frase di output  abbia i verbi con quel tempo verbale
+		voglio che la frase di output  abbia i verbi con quel tempo verbale
 
-10. Come utente, voglio poter salvare il risultato in un bucket per poter visualizzare i risultati 
+9. Come utente, voglio poter salvare il risultato in un bucket per poter visualizzare i risultati 
 
   		-Come utente che ha dato al sistema una frase di input e il sistema mi ha generato una frase di output che salvo nel bucket,
-    		voglio che la frase di output sia visibile in un bucket 
+   		voglio che la frase di output sia visibile in un bucket 
 
   		-Come utente che ha inserito una frase di input e ha visualizzato la frase di output,
     		voglio poterla vedere nel bucket  insieme alle frase precedentemente create e salvate
@@ -102,7 +102,7 @@ Definizione degli acceptance criteria:
     		voglio poter vedere sempre il bucket .
 
 
-11. Come utente, voglio che ci sia più di un template disponibile in modo da avere più opzioni
+10. Come utente, voglio che ci sia più di un template disponibile in modo da avere più opzioni
 
   		-Dato che sono un utente che sta utilizzando il software,
 		voglio che premendo il pulsante lista template mi mostri la lista dei possibili template
@@ -113,21 +113,21 @@ Definizione degli acceptance criteria:
   		-Dato che sono un utente che ha scritto una frase voglio poter selezionare il template con cui mi verrà restituita la frase di output
 
 
-12. Come utente, voglio che i vocaboli della frase input vengano aggiunti al dizionario in modo da avere più vocaboli disponibili
+11. Come utente, voglio che i vocaboli della frase input vengano aggiunti al dizionario in modo da avere più vocaboli disponibili
 
 		-Data una frase voglio che vengano riconosciuti i vocaboli che non sono presenti nel vocabolario
 
   		-Data una frase voglio che i vocaboli non presenti nel vocabolario vengano aggiunti a questo
 
 
-13. Come utente voglio poter resettare l'input per poter scrivere una nuova frase
+12. Come utente voglio poter resettare l'input per poter scrivere una nuova frase
 
 		-Dato che sono un utente che sta utilizzando il sito e ho inserito una frase,
     		premendo il bottone di reset voglio poter generare un altra frase
 
 	
 
-14. Come amministratore, voglio che venga fatta la validazione di tossicità
+13. Come amministratore, voglio che venga fatta la validazione di tossicità
 
   		-Dato che sono un amministratore, voglio che venga controllata la tossicità della frase di output.
 
@@ -135,23 +135,23 @@ Definizione degli acceptance criteria:
 
   		-Dato che sono un amministratore, voglio che se la frase non è tossica proceda a mostrare la frase generata.
 
-15. Come utente, voglio poter resettare il bucket in modo da poterlo riempire con nuove frasi
+14. Come utente, voglio poter resettare il bucket in modo da poterlo riempire con nuove frasi
 
   		-Essendo un utente che ha già inserito altre frasi, schiacciando il bottone resetta bucket voglio poter svuotare il bucket 
 
   		-Come utente voglio poter premere il bottone resetta bucket per vedere il buffer vuoto
 
-16. Come utente, voglio poter inserire una frase di input in modo da creare una nuova frase
+15. Come utente, voglio poter inserire una frase di input in modo da creare una nuova frase
 
   		-Essendo un utente che sta utilizzando il software, voglio poter avere lo spazio per scrivere la frase
 
-17. Come utente, voglio poter scegliere un template generato casualmente per avere questa opzione
+16. Come utente, voglio poter scegliere un template generato casualmente per avere questa opzione
 
   		-Dato che sono un utente che ha inserito una frase validata sintatticamente dal software,
-    		voglio avre l'opzione di scegliere un template generaato casualmente.
+    	voglio avre l'opzione di scegliere un template generaato casualmente.
 
   		-Dato che sono un utente che ha scelto che venga generato un template casuale,
-    		voglio che mi venga mostrato tale template.
+    	voglio che mi venga mostrato tale template.
 
   		-Dato che sono un utente che ha scelto di usare un template generato in modo casuale,
-    		voglio che la frase di output rispetti tale template casuale.
+    	voglio che la frase di output rispetti tale template casuale.
