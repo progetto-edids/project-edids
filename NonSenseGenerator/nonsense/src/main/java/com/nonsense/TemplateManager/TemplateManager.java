@@ -6,11 +6,13 @@ import java.util.List;
 public class TemplateManager {
     private final List<String> templates;
 
+    //costruttore
     public TemplateManager() {
         templates = new ArrayList<>();
         loadDefaultTemplates();
     }
 
+    //carica i template di default
     private void loadDefaultTemplates() {
         templates.add("The [adjective] [noun] [verb] the [adjective] [noun].");
         templates.add("The [adjective] [noun] [verb] the [adjective] [noun] while the [noun] [verb] the [adjective] [noun].");
@@ -20,14 +22,12 @@ public class TemplateManager {
         
     }
 
+    //metodi getter
     public List<String> getTemplates() {
         return templates;
     }
 
-    public String getRandomTemplate() {
-        if (templates.isEmpty()) return "";
-        return templates.get((int) (Math.random() * templates.size()));
-    }
+    //stampa i templates di default
     public void printTemplates() {
         for (int i = 0; i < templates.size(); i++) {
          System.out.println(i + ": " + templates.get(i));
@@ -63,7 +63,7 @@ public class TemplateManager {
                 .append(optionalAdjective())
                 .append("[noun]");
 
-        // Frase causale (opzionale)
+        // Frase casuale (opzionale)
         if (Math.random() < 0.3) {
             template.append(" because the ")
                     .append(optionalAdjective())
