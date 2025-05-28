@@ -3,10 +3,10 @@ Definizione degli acceptance criteria:
 1.Come utente, voglio che riconosca i sostantivi della frase In modo che possa utilizzarli per formare una nuova frase
 
 
-  Dato che sono un utente utilizzando il software e devo inserire una frase, quando la inserisco e clicco sul bottone genera voglio che il sistema riconosca i sostantivi.
+  	Dato che sono un utente utilizzando il software e devo inserire una frase, quando la inserisco e clicco sul bottone genera voglio che il sistema riconosca i sostantivi.
 
 
-  Dato che sono un utente utilizzando il software e devo inserire una frase, quando la inserisco e clicco sul bottone genera voglio che il sistema inserisca i sostantivi nel template.
+  	Dato che sono un utente utilizzando il software e devo inserire una frase, quando la inserisco e clicco sul bottone genera voglio che il sistema inserisca i sostantivi nel template.
 
 
 
