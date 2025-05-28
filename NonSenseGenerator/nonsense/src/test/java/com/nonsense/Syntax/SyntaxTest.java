@@ -31,7 +31,8 @@ class SyntaxTest {
     void tearDown() {
         syntax.close();
     }
-    
+
+    //test per vericare il corretto funzionamento di responceAnalycies verificando che le liste vengano aggiornate 
     @Test
     void testResponseAnalyticsWithSimpleSentence() throws Exception {
         String sentence = "The quick brown cat jumps over the lazy dog";
@@ -53,7 +54,8 @@ class SyntaxTest {
         
     
     }
-    
+
+    //test per verificare che la validazione della sintassi venga fatta correttamente
     @Test
     void testValidateSyntax() {
         // Frase valida con sostantivo e verbo
@@ -65,7 +67,8 @@ class SyntaxTest {
         // Frase non valida (manca il sostantivo)
         assertFalse(syntax.validateSyntax("Run quickly"));
     }
-    
+
+    //test per verificare che il metodo updateListForTemplate aggiunga o tolga parole dalle liste a seconda dei casi
     @Test
     void testUpdateListForTemplate() throws Exception{
         // Testa l'espansione della lista quando non ci sono abbastanza elementi
@@ -83,7 +86,8 @@ class SyntaxTest {
         List<String> reducedAdjectives = syntax.getAdjectives();
         assertEquals(2, reducedAdjectives.size(), "Dovrebbe avere solo 2 aggettivi");
     }
-    
+
+    //test che verfica la creazione dell'albero sinattico 
     @Test
     void testGetSyntaxTree() throws IOException {
         String sentence = "The cat sits on the table";
@@ -103,7 +107,8 @@ class SyntaxTest {
             assertTrue(token.containsKey("dependency"), "Ogni token dovrebbe avere una dependency label");
         }
     }
-    
+
+    //test che verifica che se viene inserito input vuoto le liste rimangano vuote
     @Test
     void testEmptyInput() throws Exception {
         // Test con input vuoto
@@ -117,7 +122,8 @@ class SyntaxTest {
         assertTrue(syntax.getVerbs().isEmpty(), "Nessun verbo con input vuoto");
         assertTrue(syntax.getAdjectives().isEmpty(), "Nessun aggettivo con input vuoto");
     }
-    
+
+    //test che verifica che sono riconosciuti i sostantivi nonostante la punteggiatura
     @Test
     void testSpecialCharacters() throws Exception {
         String sentence = "Hello, world! How's it going?";
