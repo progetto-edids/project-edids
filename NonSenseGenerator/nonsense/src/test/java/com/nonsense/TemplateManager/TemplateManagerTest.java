@@ -16,6 +16,7 @@ class TemplateManagerTest {
         manager = new TemplateManager();
     }
 
+    //test che berfica che ci sono 5 template  e la lisat non è nulla
     @Test
     void testDefaultTemplatesLoaded() {
         List<String> templates = manager.getTemplates();
@@ -23,19 +24,14 @@ class TemplateManagerTest {
         assertEquals(5, templates.size(), "There should be 5 default templates loaded");
     }
 
-    @Test
-    void testGetRandomTemplateNotEmpty() {
-        String template = manager.getRandomTemplate();
-        assertNotNull(template, "Random template should not be null");
-        assertFalse(template.isEmpty(), "Random template should not be empty");
-    }
-
+    //test che prende il template con un indice della lista e verifica che non sia nullo
     @Test
     void testGetTemplateByIndex_ValidIndex() {
         String template = manager.getTemplateByIndex(0);
         assertNotNull(template, "Template at index 0 should not be null");
     }
 
+    //test che prende un template con un indice fuori dai limiti e verifica che ritorna null
     @Test
     void testGetTemplateByIndex_InvalidNegativeIndex() {
         String template = manager.getTemplateByIndex(-1);
@@ -48,6 +44,7 @@ class TemplateManagerTest {
         assertNull(template, "Template with out-of-bounds index should return null");
     }
 
+    //test che verifica che quando viene creato un template casuale questo non sia null
     @Test
     public void testGenerateRandomTemplate_NotNullOrEmpty() {
         TemplateManager manager = new TemplateManager();
@@ -57,6 +54,7 @@ class TemplateManagerTest {
         assertFalse(template.isEmpty(), "Il template generato non dovrebbe essere vuoto");
     }
 
+    //test che verifica che generando un template casuale questo abbia almeno un posto per un sostantivo e un verbo
     @Test
     public void testGenerateRandomTemplate_ContainsNounAndVerb() {
         TemplateManager manager = new TemplateManager();
@@ -66,6 +64,7 @@ class TemplateManagerTest {
         assertTrue(template.contains("[verb]"), "Il template dovrebbe contenere almeno un [verb]");
     }
 
+    //test che verifica che quando viene generato un template casuale questo finisce con il punto
     @Test
     public void testGenerateRandomTemplate_EndsWithPeriod() {
         TemplateManager manager = new TemplateManager();
@@ -74,6 +73,7 @@ class TemplateManagerTest {
         assertTrue(template.endsWith("."), "Il template dovrebbe finire con un punto.");
     }
 
+    //test che verifica che su 100 volte ci sia almeno una volta un aggettivo e almeno una volta una stringa vuota
     @Test
     public void testOptionalAdjective_ReturnsValidValues() {
         TemplateManager manager = new TemplateManager();
@@ -95,6 +95,7 @@ class TemplateManagerTest {
         assertTrue(foundEmpty, "Dovrebbe esserci almeno una volta una stringa vuota");
     }
 
+    //test che verifica che il metodo invokeCapitalize funzioni corretamente
     @Test
     public void testCapitalize() {
         TemplateManager manager = new TemplateManager();
@@ -105,7 +106,7 @@ class TemplateManagerTest {
         assertNull(invokeCapitalize(manager, null));
     }
 
-    // 🔒 I metodi optionalAdjective() e capitalize() sono privati, quindi usiamo la riflessione:
+    // I metodi optionalAdjective() e capitalize() sono privati, quindi usiamo la riflessione:
     private String invokeOptionalAdjective(TemplateManager manager) {
         try {
             var method = TemplateManager.class.getDeclaredMethod("optionalAdjective");
