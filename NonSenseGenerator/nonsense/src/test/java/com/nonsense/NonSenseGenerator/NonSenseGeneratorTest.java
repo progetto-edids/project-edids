@@ -83,15 +83,7 @@ class NonSenseGeneratorTest {
         assertFalse(result.contains("[adjective]"));
     }
 
-    //test che ver
-    @Test
-    void testSetSelectedTemplate_updatesSyntaxAnalyzer() throws Exception {
-        Syntax syntax = new Syntax(dictionary);
-        String template = "[noun] [verb] [plural_noun] [adjective]";
-
-        generator.setSelectedTemplate(template, syntax);
-
-    }
+ 
 
     
 
