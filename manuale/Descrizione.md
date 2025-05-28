@@ -84,7 +84,7 @@ La frase generata viene analizzata per valutarne la tossicità. Se il punteggio 
 Dopo che la frase è stata generata verrà chiesto all’utente se desidera salvarla all’interno di un bucket. 
 
 	Esempio:
-	Do you want to add the sentence to the bucket ?Yes
+	Do you want to add the sentence to the bucket? Yes
 
 
 8. Visualizzazione del bucket
