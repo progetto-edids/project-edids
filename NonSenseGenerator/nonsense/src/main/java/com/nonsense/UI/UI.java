@@ -35,7 +35,7 @@ public class UI {
         
         System.out.println("=== Welcome to the NonSense Sentence Generator ===");
         Syntax syntaxAnalyzer;
-
+        
         try {
             syntaxAnalyzer = new Syntax(new Dictionary());
         } catch (IOException e) {
@@ -45,6 +45,7 @@ public class UI {
 
         boolean continueGenerating = true;
 
+        //finchè l'utente non dirà di non voler continuare, gli verrà chiesto di inserire una nuova frase
         while (continueGenerating) {
             // Frase da analizzare
             System.out.print("Write a sentence: ");
@@ -77,7 +78,7 @@ public class UI {
 
                     Map<String, Object> syntaxTree = syntaxAnalyzer.getSyntaxTree(userInput); // Salva il risultato
                     System.out.println("Syntax Tree:\n");
-                    System.out.println(syntaxTree);
+                    System.out.println(syntaxTree); //stampa l'albero sintattico
 
                 } else {
                     System.out.println("\nNo syntax tree will be shown.\n");
@@ -96,6 +97,7 @@ public class UI {
                 System.out.println("\n------Do you want to use a random template?\nIf no you will choose a template from the list. (yes/no)------");
                 String input1 = scanner.nextLine().trim().toLowerCase();
 
+                //se l'utente dice di voler usare un template casuale, ne viene generato uno
                 if (input1.equals("yes") || input1.equals("y")) {
                     String randomTemplate = templateManager.generateRandomTemplate();
                     System.out.println("\nRandom Template: " + randomTemplate + "\n");
@@ -113,14 +115,16 @@ public class UI {
                       System.out.println("\nPlease enter a valid number.");
                     }
                 }
-
+                    
                     selectedTemplate = templates.get(choice - 1);
                     System.out.println("\nSelected Template: " + selectedTemplate );
                     
                 }
-                
+
+                //viene settato il template scelto nel generator
                 generator.setSelectedTemplate(selectedTemplate, syntaxAnalyzer );
 
+                //viene chiesto se si vuole generare la frase nonsense
                 System.out.println("\n------Template choosen, do you want to generate the nonsense sentence?(yes/no)------");
                 String input2 = scanner.nextLine().trim().toLowerCase();
 
@@ -140,7 +144,7 @@ public class UI {
                         System.out.println("\nGenerated Sentence: " + nonsense + "\n");
                         System.out.println("This sentence appears to be safe.\n");
 
-                    //utilizzo del bucket, richiede se si vuole salvare la frase generata nel bucket
+                    //utilizzo del bucket, chiede se si vuole salvare la frase generata nel bucket
                         
                         System.out.println("------Do you want to add the nonsense sentence to the bucket?(yes/no)------");
                         String input3 = scanner.nextLine().trim().toLowerCase();
@@ -157,7 +161,7 @@ public class UI {
                     System.out.println("\nNo nonsense sentence will be generated.\n");
                 }
 
-                //chiede se si vuole visualizzare il bucket
+                //chiede se si vuole visualizzare il bucket di frasi salvate fino a quel momento
                 System.out.println("------Do you want to see the bucket?(yes/no)------");
                 String input4 = scanner.nextLine().trim().toLowerCase();
                 if (input4.equals("yes") || input4.equals("y")) {
@@ -195,6 +199,7 @@ public class UI {
                 System.out.println("Error analyzing syntax: " + e.getMessage());
             }
 
+            //chiede se si vuole generare un altra frase. In caso negativo il programma termina.
             System.out.print("\nGenerate another? (yes/no): ");
             String input = scanner.nextLine().trim().toLowerCase();
             if (!input.equals("yes") && !input.equals("y")) {
