@@ -16,7 +16,7 @@ class TemplateManagerTest {
         manager = new TemplateManager();
     }
 
-    //test che berfica che ci sono 5 template  e la lisat non è nulla
+    //test che verfica che ci sono 5 template  e la lista non è nulla
     @Test
     void testDefaultTemplatesLoaded() {
         List<String> templates = manager.getTemplates();
