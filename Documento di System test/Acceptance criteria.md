@@ -3,10 +3,10 @@ Definizione degli acceptance criteria:
 1.Come utente, voglio che riconosca i sostantivi della frase In modo che possa utilizzarli per formare una nuova frase
 
 
-  		Dato che sono un utente utilizzando il software e devo inserire una frase, quando la inserisco e clicco sul bottone genera voglio che il sistema riconosca i sostantivi.
+  	Dato che sono un utente utilizzando il software e devo inserire una frase, quando la inserisco e clicco sul bottone genera voglio che il sistema riconosca i sostantivi.
 
 
-  		Dato che sono un utente utilizzando il software e devo inserire una frase, quando la inserisco e clicco sul bottone genera voglio che il sistema inserisca i sostantivi nel template.
+  	Dato che sono un utente utilizzando il software e devo inserire una frase, quando la inserisco e clicco sul bottone genera voglio che il sistema inserisca i sostantivi nel template.
 
 
 
@@ -93,7 +93,7 @@ Definizione degli acceptance criteria:
 
  		 Data una frase voglio che vengano riconosciuti i vocaboli che non sono presenti nel vocabolario
 
-  		Data una frase voglio che i vocaboli non presenti nel vocabolario vengano aggiunti a questo
+  		 Data una frase voglio che i vocaboli non presenti nel vocabolario vengano aggiunti a questo
 
 
 12. Come utente voglio poter resettare l'input per poter scrivere una nuova frase
@@ -124,6 +124,6 @@ Definizione degli acceptance criteria:
 
   		Dato che sono un utente che ha inserito una frase validata sintatticamente dal software, voglio avre l'opzione di scegliere un template generaato casualmente.
 
-  Dato che sono un utente che ha scelto che venga generato un template casuale, voglio che mi venga mostrato tale template.
+  		Dato che sono un utente che ha scelto che venga generato un template casuale, voglio che mi venga mostrato tale template.
 
-  Dato che sono un utente che ha scelto di usare un template generato in modo casuale, voglio che la frase di output rispetti tale template casuale.
+  		Dato che sono un utente che ha scelto di usare un template generato in modo casuale, voglio che la frase di output rispetti tale template casuale.
