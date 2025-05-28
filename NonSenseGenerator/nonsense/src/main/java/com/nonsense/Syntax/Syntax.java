@@ -18,9 +18,9 @@ public class Syntax {
     protected  List<String> nouns;
     protected  List<String> verbs;
     protected  List<String> adjectives;
-    private final  Dictionary dictionary; // Riferimento al dizionario
+    private final  Dictionary dictionary;
 
-    // Costruttore aggiornato
+    // Costruttore
     public Syntax(Dictionary dictionary) throws IOException {
         this.languageService = LanguageServiceClient.create();
         this.nouns = new ArrayList<>();
@@ -29,7 +29,7 @@ public class Syntax {
         this.dictionary = dictionary;
     }
 
-    //analizza la frase id input, scuotando le liste di sostantivi, verbi e aggettivi
+    //analizza la frase id input, svuotando le liste di sostantivi, verbi e aggettivi
     public AnalyzeSyntaxResponse responseAnalycies(String inputSentence) throws Exception {
         nouns.clear();
         verbs.clear();
@@ -46,12 +46,12 @@ public class Syntax {
         saveVerbs(response);
         saveAdjectives(response);
 
-        updateDictionary(); // Aggiorna il dizionario dopo aver salvato
+        updateDictionary();
 
         return response;
     }
 
-    //metodi per salvare i vocaboli della frase di input nelle liste corrispondenti e aggiorna il dizionario
+    //metodi per salvare i vocaboli della frase di input nelle liste corrispondenti e aggiornare il dizionario
     private void saveNouns(AnalyzeSyntaxResponse response) {
         for (Token token : response.getTokensList()) {
             if (token.getPartOfSpeech().getTag() == PartOfSpeech.Tag.NOUN) {
@@ -161,7 +161,7 @@ public class Syntax {
 
   }
 
-  /* Usa Google Cloud NLP per ottenere l'albero sintattico.*/
+  // Usa Google Cloud NLP per ottenere l'albero sintattico.
 
     public Map<String, Object> getSyntaxTree(String sentence) throws IOException {
         try (LanguageServiceClient language = LanguageServiceClient.create()) {
@@ -180,8 +180,8 @@ public class Syntax {
             for (Token token : tokens) {
                 Map<String, Object> node = new LinkedHashMap<>();
                 String word = token.getText().getContent();
-                String posTag = token.getPartOfSpeech().getTag().name(); // Es: NOUN, VERB
-                String dependency = token.getDependencyEdge().getLabel().name(); // Es: SUBJECT, OBJECT
+                String posTag = token.getPartOfSpeech().getTag().name();
+                String dependency = token.getDependencyEdge().getLabel().name();
 
                 node.put("word", word);
                 node.put("tag", posTag);
