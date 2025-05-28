@@ -21,6 +21,7 @@ public class UI {
     private final BucketManager bucketManager;
     private final double TOXICITY_THRESHOLD = 0.5;
 
+    //costruttore
     public UI(NonSenseGenerator generator) {
         this.generator = generator;
         this.templateManager = new TemplateManager();
