@@ -39,6 +39,7 @@ class NonSenseGeneratorTest {
         assertEquals("placeholder", generator.getSafeWord("   "));
     }
 
+    //test che verifica che il conteggio dei placeholder per aggettivi, sostantivi e verbi sia corretto
     @Test
     void testCountPlaceholders() {
         String template = "The [adjective] [noun] [verb] the [adjective] [noun].";
@@ -48,6 +49,7 @@ class NonSenseGeneratorTest {
         assertEquals(0, generator.countPlaceholders(template, "\\[plural_noun\\]"));
     }
 
+    //test che verifica che dopo aver riempito il template non siano più presenti i placeholders di aggettivi sostantivi e verbi
     @Test
     void testFillTemplate_withValidSyntax() throws Exception {
         Syntax syntax = new Syntax(dictionary);
@@ -64,6 +66,7 @@ class NonSenseGeneratorTest {
         System.out.println("Generated: " + result);
     }
 
+    //test che verifica il corretto riempimento del template nel caso la frase di input abbia parole insufficienti a rimepire tutto il template 
     @Test
     void testFillTemplate_withInsufficientWords() throws Exception {
         Syntax syntax = new Syntax(dictionary);
@@ -80,6 +83,7 @@ class NonSenseGeneratorTest {
         assertFalse(result.contains("[adjective]"));
     }
 
+    //test che ver
     @Test
     void testSetSelectedTemplate_updatesSyntaxAnalyzer() throws Exception {
         Syntax syntax = new Syntax(dictionary);
