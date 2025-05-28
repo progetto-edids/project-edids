@@ -14,12 +14,14 @@ class DictionaryTest {
         dictionary = new Dictionary();
     }
 
+    //Test che verifica che un sostantivo nuovo venga aggiunta al dizionario
     @Test
     void testAddNoun_NewWord() {
         boolean added = dictionary.addNoun("orange");
         assertTrue(added);
     }
 
+    //Test per verificare che se un sostantivo è già nel dizionario non lo aggiunge
     @Test
     void testAddNoun_Duplicate() {
         dictionary.addNoun("apple"); // already exists
@@ -27,12 +29,14 @@ class DictionaryTest {
         assertFalse(added);
     }
 
+     //Test che verifica che un verbo nuovo venga aggiunto al dizionario
     @Test
     void testAddVerb_NewWord() {
         boolean added = dictionary.addVerb("teleport");
         assertTrue(added);
     }
 
+    //Test per verificare che se un verbo è già nel dizionario non lo aggiunge
     @Test
     void testAddVerb_Duplicate() {
         dictionary.addVerb("run"); // already exists
@@ -40,12 +44,14 @@ class DictionaryTest {
         assertFalse(added);
     }
 
+     //Test che verifica che un aggettivo nuovo venga aggiunto al dizionario
     @Test
     void testAddAdjective_NewWord() {
         boolean added = dictionary.addAdjective("mysterious");
         assertTrue(added);
     }
 
+    //Test per verificare che se un aggettivo è già nel dizionario non lo aggiunge
     @Test
     void testAddAdjective_Duplicate() {
         dictionary.addAdjective("happy"); // already exists
@@ -53,6 +59,7 @@ class DictionaryTest {
         assertFalse(added);
     }
 
+    //test che verifica che vengano presi sostantivi, verbi e aggettvi casuali e che i dizionari non siano vuoti 
     @Test
     void testGetRandomNoun_NotEmpty() {
         String noun = dictionary.getRandomNoun();
@@ -74,6 +81,7 @@ class DictionaryTest {
         assertFalse(adjective.isBlank());
     }
 
+    //test per verificare che se i dizionari sono vuoti il metodo getRandom... restituisca una stringa di default, invece di lanciare una eccezione
     @Test
     void testGetRandomNoun_WhenEmpty() {
         Dictionary emptyDict = new Dictionary();
