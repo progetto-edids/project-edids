@@ -93,13 +93,13 @@ Definizione degli acceptance criteria:
    		voglio che la frase di output sia visibile in un bucket 
 
   		-Come utente che ha inserito una frase di input e ha visualizzato la frase di output,
-    		voglio poterla vedere nel bucket  insieme alle frase precedentemente create e salvate
+   		voglio poterla vedere nel bucket  insieme alle frase precedentemente create e salvate
 
 		-come utente che ha dato al sistema una frase di input e il sistema ha generato una frase di output messa nel bucket,
-    		voglio poter vedere il bucket premendo un pulsante “mostra bucket”.
+   		voglio poter vedere il bucket premendo un pulsante “mostra bucket”.
 
   		-come utente che ha dato al sistema una frase di input e il sistema ha generato una frase di output messa nel bucket,
-    		voglio poter vedere sempre il bucket .
+   		voglio poter vedere sempre il bucket .
 
 
 10. Come utente, voglio che ci sia più di un template disponibile in modo da avere più opzioni
