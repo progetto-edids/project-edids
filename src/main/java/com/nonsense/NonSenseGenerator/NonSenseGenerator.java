@@ -52,6 +52,7 @@ public class NonSenseGenerator {
         return result;
     }
 
+    //conta i placeholders di una frase
     protected int countPlaceholders(String template, String regex) {
         return (int) Pattern.compile(regex, Pattern.CASE_INSENSITIVE)
             .matcher(template)
