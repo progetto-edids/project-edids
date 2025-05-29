@@ -1,6 +1,0 @@
-com\nonsense\Syntax\SyntaxTest.class
-com\nonsense\Dictionary\DictionaryTest.class
-com\nonsense\ToxicityValidator\ToxicityValidatorTest.class
-com\nonsense\BucketManager\BucketManagerTest.class
-com\nonsense\TemplateManager\TemplateManagerTest.class
-com\nonsense\NonSenseGenerator\NonSenseGeneratorTest.class
