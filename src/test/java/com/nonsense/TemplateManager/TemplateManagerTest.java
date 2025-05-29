@@ -40,7 +40,7 @@ class TemplateManagerTest {
 
     @Test
     void testGetTemplateByIndex_IndexOutOfBounds() {
-        String template = manager.getTemplateByIndex(10); // index > 4
+        String template = manager.getTemplateByIndex(10); 
         assertNull(template, "Template with out-of-bounds index should return null");
     }
 
