@@ -43,7 +43,21 @@
 
    Il file surefire-report.html viene generato automaticamente nella cartella target/site/
 
+5. Libreria java-dotenv
 
+   viene utilizzata per leggere le variabili definite nel file .env e renderle disponibili al programma.
+
+   Le funzioni chiave utilizzate sono:
+
+         Dotenv.configure(): Inizia il processo di configurazione per java-dotenv.
+   
+         .directory(String path): Specifica la directory in cui la libreria cercherà il file .env.
+         È fondamentale che il programma venga avviato dalla directory che contiene il file .env.
+   
+         .load(): Carica il file .env e rende le variabili in esso contenute accessibili.
+   
+         dotenv.get(String key): Una volta che il file .env è stato caricato,
+         questo metodo permette di recuperare il valore associato a una specifica key (nome della variabile d'ambiente).
 
 
 
