@@ -29,7 +29,7 @@ public class BucketManager {
 
     // Ritorna tutte le frasi
     public List<String> getAll() {
-        return new ArrayList<>(bucket); // Copia per sicurezza
+        return new ArrayList<>(bucket);
     }
 
     // Stampa tutte le frasi nel bucket
