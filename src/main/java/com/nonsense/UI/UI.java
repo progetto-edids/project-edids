@@ -169,7 +169,7 @@ public class UI {
 
             } catch (Exception e) {
                 System.out.println("Error during sentence processing: " + e.getMessage());
-                e.printStackTrace(); // È importante stampare la stack trace per debug
+                e.printStackTrace(); 
             }
 
             // chiede se si vuole generare un altra frase. In caso negativo il programma termina.
@@ -182,8 +182,5 @@ public class UI {
         }
 
         scanner.close();
-        // Rimuoviamo la chiamata syntaxAnalyzer.close() perché la chiusura del client
-        // è ora gestita centralmente da NaturalLanguageApiClient nel Main.
-        // syntaxAnalyzer.close();
     }
 }
