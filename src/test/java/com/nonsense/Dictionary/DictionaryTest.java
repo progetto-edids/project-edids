@@ -29,7 +29,7 @@ class DictionaryTest {
         assertFalse(added);
     }
 
-     //Test che verifica che un verbo nuovo venga aggiunto al dizionario
+    //Test che verifica che un verbo nuovo venga aggiunto al dizionario
     @Test
     void testAddVerb_NewWord() {
         boolean added = dictionary.addVerb("teleport");
@@ -81,7 +81,7 @@ class DictionaryTest {
         assertFalse(adjective.isBlank());
     }
 
-    //test per verificare che se i dizionari sono vuoti il metodo getRandom... restituisca una stringa di default, invece di lanciare una eccezione
+    //test per verificare che, se i dizionari sono vuoti, il metodo getRandom... restituisca una stringa di default, invece di lanciare una eccezione
     @Test
     void testGetRandomNoun_WhenEmpty() {
         Dictionary emptyDict = new Dictionary();
