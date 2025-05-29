@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 
 import com.nonsense.Dictionary.Dictionary;
 import com.nonsense.Syntax.Syntax;
-import com.google.cloud.language.v1.LanguageServiceClient; // Importa LanguageServiceClient
-import com.nonsense.NaturalLanguageApiClient; // Importa NaturalLanguageApiClient
+import com.google.cloud.language.v1.LanguageServiceClient;
+import com.nonsense.NaturalLanguageApiClient;
 
 import java.io.IOException;
 
@@ -18,17 +18,15 @@ class NonSenseGeneratorTest {
 
     private Dictionary dictionary;
     private NonSenseGenerator generator;
-    private Syntax syntax; // La classe Syntax sarà un campo
-    // Useremo un'istanza reale del LanguageServiceClient
+    private Syntax syntax;
     private LanguageServiceClient realLanguageServiceClient; 
 
     @BeforeEach // Eseguito prima di ogni test
-    public void setUp() throws IOException { // Aggiungi throws IOException per LanguageServiceClient.create()
+    public void setUp() throws IOException {
         generator = new NonSenseGenerator(); 
         dictionary = new Dictionary();
 
-        // 1. Inizializza il LanguageServiceClient reale.
-        // Questo richiederà che il file .env e le credenziali siano correttamente configurate.
+        //Inizializza il LanguageServiceClient reale.
         realLanguageServiceClient = NaturalLanguageApiClient.getServiceClient();
         
         // Se il client non può essere inizializzato (es. credenziali mancanti/errate), il test fallisce.
@@ -36,19 +34,17 @@ class NonSenseGeneratorTest {
             fail("Impossibile inizializzare LanguageServiceClient per i test. Controlla il file .env e le credenziali.");
         }
 
-        // 2. Inizializza Syntax, passandogli il Dictionary e il LanguageServiceClient reale.
-        // Poiché Syntax è usato in più test, lo inizializziamo qui in setUp.
+        //Inizializza Syntax, passandogli il Dictionary e il LanguageServiceClient reale.
         syntax = new Syntax(dictionary, realLanguageServiceClient);
     }
 
     @AfterEach
     void tearDown() {
-        // 3. Chiudi il LanguageServiceClient reale dopo ogni test per rilasciare le risorse.
+        //Chiudi il LanguageServiceClient reale dopo ogni test per rilasciare le risorse.
         if (realLanguageServiceClient != null) {
             NaturalLanguageApiClient.closeServiceClient();
             realLanguageServiceClient = null; // Imposta a null per pulizia
         }
-        // Non è necessario chiamare syntax.close() qui, poiché Syntax non gestisce la chiusura del client.
     }
 
     @Test
@@ -78,9 +74,7 @@ class NonSenseGeneratorTest {
 
     //test che verifica che dopo aver riempito il template non siano più presenti i placeholders di aggettivi sostantivi e verbi
     @Test
-    void testFillTemplate_withValidSyntax() throws Exception { // Aggiungi throws Exception
-        // Usiamo l'istanza di syntax inizializzata in setUp, che usa il client API reale.
-        // Questa chiamata effettuerà una vera analisi sintattica.
+    void testFillTemplate_withValidSyntax() throws Exception {
         syntax.validateSyntax("The quick brown fox jumps over the lazy dog");
 
         String template = "The [adjective] [noun] [verb] the [plural_noun]";
@@ -97,7 +91,7 @@ class NonSenseGeneratorTest {
 
     //test che verifica il corretto riempimento del template nel caso la frase di input abbia parole insufficienti a rimepire tutto il template 
     @Test
-    void testFillTemplate_withInsufficientWords() throws Exception { // Aggiungi throws Exception
+    void testFillTemplate_withInsufficientWords() throws Exception {
         // Usiamo l'istanza di syntax inizializzata in setUp, che usa il client API reale.
         syntax.validateSyntax("Mum cooks dinner");  
 
