@@ -41,35 +41,29 @@ class ToxicityValidatorTest {
 
     //test che verifica che con una frase non tossica la validazione della tossicità dia un rate tra 0 e 1
     @Test
-    void testGetToxicityScore_withNonToxicText() throws Exception { // Aggiungi throws Exception
+    void testGetToxicityScore_withNonToxicText() throws Exception {
         String text = "My mum cooks dinner really well.";
         // Chiama il metodo non statico sull'istanza del validator
         double score = validator.getToxicityScore(text); 
 
         assertTrue(score >= 0.0 && score <= 1.0, "Score should be between 0 and 1");
         System.out.println("Toxicity score (non-toxic): " + score);
-        // Potresti voler asserire che il punteggio sia basso per un testo non tossico, es:
-        // assertTrue(score < 0.2, "Score for non-toxic text should be low"); 
     }
 
     //test che verifica che inserendo una frase tossica la validizazione dia un rate tra 0 e 1
     @Test
-    void testGetToxicityScore_withToxicText() throws Exception { // Aggiungi throws Exception
+    void testGetToxicityScore_withToxicText() throws Exception { 
         String text = "You're a horrible, stupid person!";
-        // Chiama il metodo non statico sull'istanza del validator
         double score = validator.getToxicityScore(text);
 
         assertTrue(score >= 0.0 && score <= 1.0, "Score should be between 0 and 1");
         System.out.println("Toxicity score (toxic): " + score);
-        // Potresti voler asserire che il punteggio sia alto per un testo tossico, es:
-        // assertTrue(score > 0.8, "Score for toxic text should be high");
     }
 
     //test che verifica che un testo vuoto ha tossicità nulla
     @Test
-    void testGetToxicityScore_withEmptyText() throws Exception { // Aggiungi throws Exception
+    void testGetToxicityScore_withEmptyText() throws Exception {
         String text = "";
-        // Chiama il metodo non statico sull'istanza del validator
         double score = validator.getToxicityScore(text);
 
         assertEquals(0.0, score, "Empty text should result in 0 toxicity");
