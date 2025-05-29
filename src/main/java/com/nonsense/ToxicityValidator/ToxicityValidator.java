@@ -4,7 +4,7 @@ import com.google.cloud.language.v1.Document;
 import com.google.cloud.language.v1.ModerateTextRequest;
 import com.google.cloud.language.v1.ModerateTextResponse;
 import com.google.cloud.language.v1.ClassificationCategory;
-import com.google.cloud.language.v1.LanguageServiceClient; // Importa LanguageServiceClient
+import com.google.cloud.language.v1.LanguageServiceClient;
 
 
 public class ToxicityValidator {
@@ -12,9 +12,8 @@ public class ToxicityValidator {
     //  campo per l'istanza di LanguageServiceClient
     private final LanguageServiceClient languageService;
 
-    // Costruttore: Ora riceve l'istanza di LanguageServiceClient già inizializzata
+    // Costruttore
     public ToxicityValidator(LanguageServiceClient languageServiceClient) {
-        // Assegna il client passato come parametro
         this.languageService = languageServiceClient;
     }
 
@@ -41,7 +40,5 @@ public class ToxicityValidator {
 
         return maxConfidence; // restituisce il punteggio di tossicità massimo
         // La chiusura del client LanguageServiceClient è gestita da NaturalLanguageApiClient nel Main.
-        // Non chiudere qui perché l'istanza è riutilizzata.
-        // }
     }
 }
