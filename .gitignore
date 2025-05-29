@@ -1,0 +1,4 @@
+credentials/*.json
+!credentials/service-account-example.json
+!credentials/.gitkeep
+.env
