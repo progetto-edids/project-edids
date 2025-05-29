@@ -15,10 +15,10 @@ Creare un Service Account con il ruolo di Cloud Natural Language API User.
 
 Scaricare il file .json di credenziali.
 
-Rinominarlo come 
+Copiarne il contenuto in: 
 
 		google-credentials.json 
-Copiarlo nella cartella credentials. 
+
 
 Il path finale dovrebbe essere
 
