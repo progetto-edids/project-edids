@@ -21,7 +21,8 @@
 
 
 - java-dotenv
-Questo progetto utilizza la libreria java-dotenv per gestire le variabili d'ambiente e le configurazioni sensibili (come chiavi API, credenziali) in modo sicuro e flessibile, separandole dal codice sorgente.
-Le variabili d'ambiente vengono caricate da un file .env locale, garantendo che le credenziali non vengano commesse nel sistema di controllo versione.
+
+    Questo progetto utilizza la libreria java-dotenv per gestire le variabili d'ambiente e le configurazioni sensibili (come chiavi API, credenziali) in modo sicuro e flessibile, separandole dal codice sorgente.
+    Le variabili d'ambiente vengono caricate da un file .env locale, garantendo che le credenziali non vengano commesse nel sistema di controllo versione.
 
 
