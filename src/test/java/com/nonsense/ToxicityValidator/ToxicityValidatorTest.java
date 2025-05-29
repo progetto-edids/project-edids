@@ -6,20 +6,18 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.google.cloud.language.v1.LanguageServiceClient; // Importa LanguageServiceClient
-import com.nonsense.NaturalLanguageApiClient; // Importa NaturalLanguageApiClient
+import com.google.cloud.language.v1.LanguageServiceClient;
+import com.nonsense.NaturalLanguageApiClient;
 
 import java.io.IOException;
 
 class ToxicityValidatorTest {
 
-    private ToxicityValidator validator; // Istanza non statica del validator
-    private LanguageServiceClient realLanguageServiceClient; // Il client API reale
+    private ToxicityValidator validator;
+    private LanguageServiceClient realLanguageServiceClient;
 
     @BeforeEach
-    void setUp() throws IOException { // Aggiungi throws IOException per getServiceClient()
-        // 1. Ottieni l'istanza reale del LanguageServiceClient.
-        // Questo richiederà che il file .env e le credenziali siano configurate correttamente.
+    void setUp() throws IOException {
         realLanguageServiceClient = NaturalLanguageApiClient.getServiceClient();
 
         // Se il client non può essere inizializzato (es. credenziali mancanti/errate), il test fallisce.
@@ -27,18 +25,17 @@ class ToxicityValidatorTest {
             fail("Impossibile inizializzare LanguageServiceClient per i test. Controlla il file .env e le credenziali.");
         }
 
-        // 2. Inizializza ToxicityValidator, passandogli il LanguageServiceClient reale.
+        // Inizializza ToxicityValidator, passandogli il LanguageServiceClient reale.
         validator = new ToxicityValidator(realLanguageServiceClient);
     }
 
     @AfterEach
     void tearDown() {
-        // 3. Chiudi il LanguageServiceClient reale dopo ogni test per rilasciare le risorse.
+        // Chiudi il LanguageServiceClient reale dopo ogni test per rilasciare le risorse.
         if (realLanguageServiceClient != null) {
             NaturalLanguageApiClient.closeServiceClient();
             realLanguageServiceClient = null; // Imposta a null per pulizia
         }
-        // Non c'è un metodo .close() su ToxicityValidator da chiamare qui.
     }
 
 
