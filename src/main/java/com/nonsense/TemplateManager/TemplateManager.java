@@ -1,3 +1,5 @@
+/*Classe TemplateManager: gestisce le operazioni relative ai template ad esempio il caricamento dei template predefiniti
+e la creazione di un template casuale.*/
 package com.nonsense.TemplateManager;
 
 import java.util.ArrayList;
