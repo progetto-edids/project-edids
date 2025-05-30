@@ -1,6 +1,6 @@
-/*Classe NaturalLanguageApiClient. Per questa classe è stato utilizzato il GRASP pattern Singleton.
-Garantisce che esista una sola istanza di LanguageServiceClient in tutta l'applicazione 
-e fornisce un punto di accesso globale a tale istanza tramite il metodo statico getServiceClient*/
+/*Classe NaturalLanguageApiClient: inizializzaza e la gestisce il LanguageServiceClient.
+Per questa classe è stato utilizzato il GRASP pattern Singleton.
+Garantisce che esista una sola istanza di LanguageServiceClient in tutta l'applicazione */
 
 package com.nonsense;
 
