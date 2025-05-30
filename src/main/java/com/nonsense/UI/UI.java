@@ -1,3 +1,6 @@
+/* Classe UI è stato tulizzato il GRASP pattern Controller. La classe orchestra un'interazione utente complessa 
+delegando le responsabilità a componenti più specifici.*/
+
 package com.nonsense.UI;
 
 import java.util.List;
