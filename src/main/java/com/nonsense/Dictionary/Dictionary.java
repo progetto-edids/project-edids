@@ -1,3 +1,4 @@
+/*Classe Dictionary: gestiesce i dizionari di sostantivi, verbi e aggettivi*/
 package com.nonsense.Dictionary;
 
 import java.util.ArrayList;
