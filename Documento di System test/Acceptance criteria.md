@@ -148,7 +148,7 @@ Definizione degli acceptance criteria:
 16. Come utente, voglio poter scegliere un template generato casualmente per avere questa opzione
 
   		-Dato che sono un utente che ha inserito una frase validata sintatticamente dal software,
-    	voglio avre l'opzione di scegliere un template generaato casualmente.
+    	voglio avere l'opzione di scegliere un template generato casualmente.
 
   		-Dato che sono un utente che ha scelto che venga generato un template casuale,
     	voglio che mi venga mostrato tale template.
