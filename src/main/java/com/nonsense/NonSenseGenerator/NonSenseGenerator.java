@@ -1,3 +1,4 @@
+/*Classe NonSenseGenerator: gestisce il riempimento del template */
 package com.nonsense.NonSenseGenerator;
 
 
