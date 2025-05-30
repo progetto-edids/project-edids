@@ -1,3 +1,5 @@
+/* Classe BucketManager è stata designata come esperto di informazione (information expert) per le operazioni relative al buket*/
+
 package com.nonsense.BucketManager;
 
 
