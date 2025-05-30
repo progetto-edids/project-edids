@@ -1,4 +1,4 @@
-/* Classe UI è stato tulizzato il GRASP pattern Controller. La classe orchestra un'interazione utente complessa 
+/* Classe UI è stato utlizzato il GRASP pattern Controller. La classe orchestra un'interazione utente complessa 
 delegando le responsabilità a componenti più specifici.*/
 
 package com.nonsense.UI;
