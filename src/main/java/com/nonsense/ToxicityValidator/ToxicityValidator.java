@@ -1,3 +1,4 @@
+/*Classe ToxicityValidator: getisce la validazione della tossictà delle frasi.*/
 package com.nonsense.ToxicityValidator;
 
 import com.google.cloud.language.v1.Document;
