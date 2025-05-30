@@ -1,4 +1,4 @@
-/*Classe NaturalLanguageApiClient: inizializzaza e la gestisce il LanguageServiceClient.
+/*Classe NaturalLanguageApiClient: inizializza e la gestisce il LanguageServiceClient.
 Per questa classe è stato utilizzato il GRASP pattern Singleton.
 Garantisce che esista una sola istanza di LanguageServiceClient in tutta l'applicazione */
 
