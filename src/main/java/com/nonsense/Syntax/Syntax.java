@@ -1,3 +1,6 @@
+/*Classe Syntax: si occupa di gestire le operazioni relative alla sintassi della frase utilizzando delle liste
+di verbi, aggetivi e sostantivi.*/
+
 package com.nonsense.Syntax;
 
 import java.io.IOException;
