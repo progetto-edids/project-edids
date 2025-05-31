@@ -19,8 +19,9 @@ Importante: all'interno del file "Istruzioni" sono presenti le istruzioni per l'
 1. Definzione degli acceptance criteria.
 2. Documento di System test.
 
-"Unit test report" contiene:
+"docs" contiene:
 1. report generato automanticamente da JUnit in formato html.
+2. link per lo unit test report
 
 
 
