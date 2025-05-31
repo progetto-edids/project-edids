@@ -23,4 +23,4 @@ Importante: all'interno del file "Istruzioni" sono presenti le istruzioni per l'
 1. report generato automanticamente da JUnit in formato html.
 
 
-Le definzioni delle user stories si trovano al link jira: 
+
