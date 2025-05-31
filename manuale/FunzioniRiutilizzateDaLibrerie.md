@@ -28,22 +28,8 @@
          ModerateTestRequest – per ottenere il punteggio di tossicità della frase
 
 
-3. Maven Surefire Plugin (maven-surefire-plugin)
-   
-   Utilizzato per eseguire i test con Maven in modo automatico
 
-
-   Non richiede chiamate dirette nel codice: viene configurato in pom.xml ed esegue i test durante mvn test
-
-
-4. Maven Surefire Report Plugin
-   
-   Utilizzato per generare un report HTML dei risultati dei test
-
-
-   Il file surefire-report.html viene generato automaticamente nella cartella target/site/
-
-5. Libreria java-dotenv
+3. Libreria java-dotenv
 
    viene utilizzata per leggere le variabili definite nel file .env e renderle disponibili al programma.
 
