@@ -15,9 +15,6 @@
     JUnit 5 è il framework utilizzato per la scrittura e l’esecuzione dei test unitari. Permette di automatizzare la verifica del corretto funzionamento del codice attraverso annotazioni e asserzioni, migliorando la qualità e l’affidabilità del software.
 
 
-- Maven Surefire Plugin
-
-    Il Maven Surefire Plugin viene impiegato per eseguire i test durante la fase di build e per la generazione di report sui risultati dei test. Questo plugin facilita l’integrazione dei test nel processo di sviluppo automatizzato tramite Maven.
 
 
 - java-dotenv
